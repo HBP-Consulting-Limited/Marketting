@@ -130,7 +130,7 @@
 			/* Customer Contact Details */
 
 			.cb-page ul.cb-customer-contact {
-				margin: 35px 0px 35px 0px !important;
+				margin: 35px 0px 35px 150px !important;
 			}
 
 			.cb-page ul.cb-customer-contact li.cb-address {
@@ -157,6 +157,7 @@
 
 			.cb-invoice-summary { 
 				clear: both;
+                margin-left: 150px;
 			}
 
 			.cb-invoice-summary h3.cb-summary { }
@@ -168,9 +169,9 @@
 			.cb-page table.cb-invoice-items {
 				background: #ffffff;
 				border-collapse: collapse;
-				margin: 20px 0px 10px 0px;
+				margin: 20px 0px 10px 150px;
 				padding: 0px;
-				width: 100%;
+				width: auto;
 			}
 
 			.cb-page table.cb-invoice-items thead {
@@ -253,18 +254,25 @@
 				font-weight: 700;
 			}
 
+
+            .cb-page .cb-invoice-settlement-discount {
+                margin-left: 150px
+            }
 			/* Payment History */
 
 			.cb-page table.cb-payments {
 				background: #ffffff;
 				border-collapse: collapse;
-				margin: 20px 0px 10px 0px !important;
+				margin: 20px 0px 10px 150px !important;
 				padding: 0px;
-				width: 100%;
+				width: auto;
+                display: none;
 			}
 
 			.cb-page h2.cb-payment-history {
 				margin-bottom: -5px !important;
+                margin-left: 150px;
+                display: none;
 			}
 
 			.cb-page table.cb-payments thead {
@@ -326,22 +334,21 @@
 			/* Payment Advice */
 
 			.cb-page .cb-footer {
-				border-top: 1px dashed #bbbbbb;
 				margin: 30px 0px 0px 0px;
 				padding: 10px 0px 0px 0px;
 			}
 
 			.cb-page .cb-footer-text {
-				margin: 0px 0px 8px 0px !important;
+				margin: 0px 0px 8px 150px !important;
 			}
 
 			.cb-page h2.cb-payment-advice {
-				margin: 10px 0px 10px 0px;
+				margin: 10px 0px 10px 150px;
 			}
 
 			.cb-page ul.cb-payment-methods {
 				clear: both;
-				margin: 30px 0px !important;
+				margin: 30px 0px 0px 150px!important;
 			}
 
 			.cb-page ul.cb-payment-methods li.cb-method {
@@ -360,7 +367,7 @@
 				font-size: 12px;
 				margin: 0px 0px 0px 0px;
 				padding: 0px 00px 0px 0px;
-				text-align: left;
+				text-align: right;
                 border-top-style: solid;
                 border-top-color: #663366;
 			}
