@@ -48,7 +48,7 @@
 
 			.cb-page h2.cb-title {
 				color: #663366 !important;
-				font-size: 20px !important;
+				font-size: 15px !important;
 			}
 
 			.cb-page h3.cb-title {
@@ -81,6 +81,7 @@
 				font-size: 25px !important;
 				margin: 0px 0px 0px 0px !important;
 				padding: 0px !important;
+                text-transform: uppercase;
 			}
 
 			.cb-page ul.cb-invoice-info {
@@ -131,7 +132,7 @@
 			/* Customer Contact Details */
 
 			.cb-page ul.cb-customer-contact {
-				margin: 35px 0px 35px 150px !important;
+				margin: 10px 0px 0px 150px !important;
 			}
 
 			.cb-page ul.cb-customer-contact li.cb-address {
@@ -147,7 +148,7 @@
 
 			.cb-page ul.cb-customer-contact li.cb-address address {
 				font-style: normal;
-				margin: 0px 0px 30px 0px;
+				margin: 0px 0px 0px 0px;
 			}
 
 			.cb-page p.cb-tax label {
@@ -159,6 +160,7 @@
 			.cb-invoice-summary { 
 				clear: both;
                 margin-left: 150px;
+                margin-top: 10px;
 			}
 
 			.cb-invoice-summary h3.cb-summary {
@@ -172,7 +174,7 @@
 			.cb-page table.cb-invoice-items {
 				background: #ffffff;
 				border-collapse: collapse;
-				margin: 20px 0px 10px 150px;
+				margin: 10px 0px 10px 150px;
 				padding: 0px;
 				width: auto;
 			}
@@ -283,17 +285,10 @@
 			/* Payment History */
 
 			.cb-page table.cb-payments {
-				background: #ffffff;
-				border-collapse: collapse;
-				margin: 20px 0px 10px 150px !important;
-				padding: 0px;
-				width: auto;
                 display: none;
 			}
 
 			.cb-page h2.cb-payment-history {
-				margin-bottom: -5px !important;
-                margin-left: 150px;
                 display: none;
 			}
 
@@ -356,8 +351,7 @@
 			/* Payment Advice */
 
 			.cb-page .cb-footer {
-				margin: 30px 0px 0px 0px;
-				padding: 10px 0px 0px 0px;
+				margin: 10px 0px 0px 0px;
 			}
 
 			.cb-page .cb-footer-text {
@@ -366,11 +360,12 @@
 
 			.cb-page h2.cb-payment-advice {
 				margin: 10px 0px 10px 150px;
-			}
+                text-transform: uppercase;
+ 			}
 
 			.cb-page ul.cb-payment-methods {
 				clear: both;
-				margin: 30px 0px 0px 150px!important;
+				margin: 10px 0px 0px 150px!important;
 			}
 
 			.cb-page ul.cb-payment-methods li.cb-method {
@@ -384,10 +379,17 @@
 				margin: 0px 0px 30px 0px;
 			}
 
-            .cb-page .cb-payable-to,
-            .cb-page .cb-amount-enclosed {
+            .cb-method-info .cb-bank-name,
+            .cb-method-info .cb-payable-to,
+            .cb-method-info .cb-customer-name,
+            .cb-method-info .cb-address,
+            .cb-method-info .cb-invoice-number,
+            .cb-method-info .cb-due-date,
+            .cb-method-info .cb-amount-due,
+            .cb-method-info .cb-amount-enclosed {
                 display: none;
             }
+
 
 			.cb-page .cb-registered-office {
 				clear: both;
@@ -430,6 +432,7 @@
 						content: string(companyreg) " (Page " counter(page) " of " counter(pages) ")"; /* Load contents for company_reg into the page footer */
 						font-size: 8pt;
 						text-align: right;
+                        padding-left: 150px;
                         border-top-color: #663366;
                         border-top-style: solid;
 					}
